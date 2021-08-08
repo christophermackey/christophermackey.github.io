@@ -4,6 +4,7 @@
  * Licensed under  ()
  */
 /**
+ * 
  * Owl carousel
  * @version 2.1.6
  * @author Bartosz Wojciechowski
@@ -15,6 +16,7 @@
  * @todo Test Zepto
  * @todo stagePadding calculate wrong active classes
  */
+
 ;(function($, window, document, undefined) {
 
   /**
