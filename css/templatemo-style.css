@@ -245,47 +245,65 @@ ul {
   margin: 0 0 25px 0;
 }
 
-.b-blue {
-  margin-bottom: -2px;
-  background-image: url(../img/first-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  overflow: hidden;
-  background-attachment: fixed;
+/* trying new background for about section */
+.b-yellow, .b-blue, .b-red, .b-green {
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index:3;
+
+-moz-animation:move-clouds-back 200s linear infinite;
+-ms-animation:move-clouds-back 200s linear infinite;
+-o-animation:move-clouds-back 200s linear infinite;
+-webkit-animation:move-clouds-back 200s linear infinite;
+animation:move-clouds-back 200s linear infinite;
+}
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
 }
 
-.b-red {
-  background-image: url(../img/second-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  overflow: hidden;
-  background-attachment: fixed;
-  margin-top: -2px;
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+  from {background-position: 0;}
+  to {background-position:10000px 0;}
 }
 
-.b-green {
-  margin-top: -2px;
-  background-image: url(../img/third-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  overflow: hidden;
-  background-attachment: fixed;
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
 }
-
-.b-yellow {
-  margin-top: -1px;
-  background-image: url(../img/fourth-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  overflow: hidden;
-  background-attachment: fixed;
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
 }
-
-
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+} 
 
 /*
 ========================
@@ -621,6 +639,7 @@ ul {
     right: 0;
     margin-bottom: 30px;
   }
+ 
   .home-content h1 {
     margin-bottom: 0px;
     padding-top: 60px;
