@@ -43,6 +43,11 @@ ul {
   border: 1px solid transparent;
 }
 
+.github {
+  color:#3e4e62;
+  text-decoration: underline
+}
+
 .primary-button a:hover {
   background-color: transparent;
   border: 1px solid #fff;
